@@ -5,7 +5,7 @@ Depot::Application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
-
+  
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -26,4 +26,17 @@ Depot::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'blogapp.com',
+    user_name:            'guleria.arun12@gmail.com',
+    password:             'qaz123456wsx',
+    authentication:       'plain',
+    enable_starttls_auto: true
+  }
+
+  
 end

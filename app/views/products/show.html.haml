@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @product.title
+%p
+  %b Description:
+  = @product.description
+%p
+  %b Image url:
+  = @product.image_url
+%p
+  %b Price:
+  = @product.price
+
+= link_to fa_icon('edit') + ' Edit', edit_product_path(@product), class: 'btn btn-deault'
+
+= link_to fa_icon('angle-left') + ' Back', products_path, class: 'btn btn-default'
+
