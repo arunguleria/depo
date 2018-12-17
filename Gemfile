@@ -34,7 +34,7 @@ gem 'paperclip', '~> 3.0'
 gem "font-awesome-rails"
 gem 'kaminari'    #for pagination
 
-gem 'thin'
+gem 'puma'
 
 gem 'haml'
 gem 'haml-rails'
@@ -58,4 +58,4 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # gem 'capistrano', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]
